@@ -1,0 +1,19 @@
+﻿using UnityEngine;
+
+public class Player : MonoBehaviour
+{
+
+	Animator animator;
+
+	void Start ()
+	{
+		animator = GetComponent<Animator> ();
+	}
+	
+	void OnCollisionEnter (Collision collision)
+	{
+		if (collision.gameObject.name == "Block") {
+			animator.SetTrigger ("Dead");
+		}
+	}
+}

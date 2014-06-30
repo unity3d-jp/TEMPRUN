@@ -1,0 +1,24 @@
+using UnityEngine;
+
+public class Player : MonoBehaviour
+{
+
+	Animator animator;
+
+	void Start ()
+	{
+		animator = GetComponent<Animator> ();
+	}
+
+	void Update ()
+	{
+		animator.SetBool ("Vaut", Input.GetKeyDown (KeyCode.UpArrow));
+	}
+
+	void OnCollisionEnter (Collision collision)
+	{
+		if (collision.gameObject.name == "Block") {
+			animator.SetTrigger ("Dead");
+		}
+	}
+}
