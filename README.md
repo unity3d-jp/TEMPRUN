@@ -1,8 +1,8 @@
-# Temp Run
+# TEMPRUN
 
 とりあえず完成しているゲームを見てみましょう。
 
-Unityを開き、`Demo`シーンを開きます。
+Unityを開き、`Demo`フォルダにある`Demo`シーンを開きます。
 
 ## 環境を揃えましょう
 
@@ -143,12 +143,15 @@ Animatorウィンドウの左下に**Parameters**という部分があるので�
 
 > Any Stateは様々なステートから遷移できる便利なものです。
 
+
 ![](https://dl.dropboxusercontent.com/u/153254465/screenshot/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202014-06-30%2020.17.31.png)
 
 
 Transitionの矢印をクリックして、インスペクターにある**Conditions**を「Exit Time」から「Dead」に変更します。
 
 ![](https://dl.dropboxusercontent.com/u/153254465/screenshot/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202014-06-30%2021.12.42.png)
+
+こうすることで「Deadという条件がマッチしたらどのステートからでもDyingステートへ遷移する」というものが出来ました。
 
 さてこれでアニメーター側の設定は出来ました。
 
