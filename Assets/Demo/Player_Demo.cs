@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player_Demo : MonoBehaviour
 {
 
 	Animator animator;
